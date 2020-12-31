@@ -1,29 +1,36 @@
-import { useState } from 'react'
+//import { useState } from 'react'
 export default function Header(props){
 	
-	return <nav className="navbar  _bg-primary" role="navigation">
-		<div className="navbar-header">
+	return <div className="
+					navbar  bg-info"	
+					role="navigation">
+		<div className="navbar-dark">
 			<button 
-				className="_navbar-toggler
-					 _navbar-dark 
-					_navbar-toggler-icon"
-			data-toggle="collapse"
-			data-target=".navbar-collapse">
-				{'012'.split('').map( (v,i)=><span
-					className="icon-bar"
-					key={i}>---
-				</span> )}
-			</button>
-			<span className=" navbar-brand">MyReactApp</span>
+				className="
+					toggler
+					navbar-toggler
+					navbar-toggler-icon"
+					data-toggle="collapse"
+					data-target=".navbar-collapse">
+				</button>
+				<span className="
+					brand
+					navbar-brand">
+				MyReactApp
+			</span>
 		</div>
-		<div className="bg-dark collapse navbar-collapse"
+		<nav className="bg-light
+			collapsing
+			navbar-collapse"
 			style={{ position: "absolute",
 				top: '100%',
-				left: '0', right: '0'
+				left: '0', right: '0',
+				paddingRight: '15px',
+				paddingLeft: '15px'
 			 }}>
 			<List />
-		</div>
-	</nav>
+		</nav>
+	</div>
 	
 }
 

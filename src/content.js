@@ -1,38 +1,58 @@
 //import {useState} from 'react'
 
 export default function Content(props){
-		return <div style={{ height: '500px' }} className="container bg-light">
-			<article align="center" className="container">
-				<h3>Login </h3>
-				<AddDataForm add={props.setData} data={props.data} />
-			</article>
-		</div>
+		return <main style={{
+			justifyContent: 'center',
+			alignItem: "center",
+			display: "flex",
+			flexDirection: 'column',
+			height:"90vh"
+		}}
+		className="container bg-light">
+			<h3 align="center"
+				className="">Login </h3>
+			<section className="container"
+				style={{
+					
+				}}>
+				<Form />
+			</section>
+		</main>
 	}
 	
 
-function AddDataForm(props){
+function Form(props){
 	const submit=e=>{
 		let username=e.target[0],
 		password=e.target[1]
 		if(username.value === '' || password.value === ''){
 				e.preventDefault()
-				console.log(e)
+				//console.log(e)
 			}
 		//else, send data
 		
-	},
-	style={ width: '100%' }
+	}
 	return <form onSubmit={submit}
-	className="form-horizontal">
-		<input style={style} type="text"
-			placeholder="Username" />
-		<input style={style} type="password"
-			placeholder="Password" />
+	action=""
+	method=""
+	className="">
+		<div className="form-group">
+			<input type="text"
+				className="form-control"
+				id="username"
+				placeholder="@exsample" />
+				
+			<input type="password"
+				id="password"
+				className="form-control"
+				placeholder="Password" />
+		</div>
 		
 		<button
-			className="btn btn-primary"
-			style={style} type="submit">
+			className="btn btn-primary btn-block"
+			type="submit">
 			Login
 		</button>
+		
 	</form>
 }

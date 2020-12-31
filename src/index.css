@@ -1,6 +1,14 @@
-.icon-bar{
-	display: block;
-	width: 22px;
-	height: 4px;
-	border-radius: 2px;
+.error{
+	border: 1px solid rgba(0, 123, 255, 0.25) !important;
+	}
+.brand{
+	padding-left: 15px;
+	padding-right: 15px;
 }
+.toggler:focus {
+  outline: 0;
+}
+#password, #username{
+	
+	_box-shadow: none;
+	}
