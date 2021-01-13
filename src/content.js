@@ -6,7 +6,8 @@ export default function Content(props){
 			alignItem: "center",
 			display: "flex",
 			flexDirection: 'column',
-			height:"90vh"
+	        paddingTop:"20px",
+			paddingBottom:"20px"
 		}}
 		className="container bg-light">
 			<h3 align="center"
@@ -16,6 +17,7 @@ export default function Content(props){
 					
 				}}>
 				<Form />
+				<span>Belum punya akun? <a href="sign">Sign</a></span>
 			</section>
 		</main>
 	}

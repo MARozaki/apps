@@ -53,7 +53,7 @@ let arr = {
     "header": <Header />,
     "article": <Connected store={store} />,
     //"sidebar":<Sidebar />,
-    //"footer":<Footer />
+    "footer":<Footer />
 }
 
 for (let key of Object.keys(arr)) {
