@@ -17,7 +17,7 @@ export default function Content(props){
 					
 				}}>
 				<Form />
-				<span>Belum punya akun? <a href="sign">Sign</a></span>
+				<span>Belum punya akun? <a href="signup">Daftar</a></span>
 			</section>
 		</main>
 	}
@@ -30,6 +30,7 @@ function Form(props){
 		if(username.value === '' || password.value === ''){
 				e.preventDefault()
 				//console.log(e)
+				//tampilkan kesalahan
 			}
 		//else, send data
 		
@@ -42,7 +43,7 @@ function Form(props){
 			<input type="text"
 				className="form-control"
 				id="username"
-				placeholder="@exsample" />
+				placeholder="Username" />
 				
 			<input type="password"
 				id="password"
